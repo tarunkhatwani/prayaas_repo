@@ -1,0 +1,91 @@
+/* 
+.login {
+     width: 300px;
+    height: 290px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    margin-top: 40px; 
+    padding-top: 10px;
+    padding-left: 50px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: inset -4px -4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+}
+
+.login input[type="text"] {
+    width: 200px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.login input[type="password"] {
+    width: 200px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.login input[type="submit"] {
+    width:100px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    background-color: skyblue;
+    font-weight: bolder;
+}
+
+input[type="text"]:valid, input[type="password"]:valid {
+    background-image: url(../images/righttick.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20%;
+}
+
+ */
+ 
+ 
+ @import url(http://fonts.googleapis.com/css?family=Roboto:400);
+body {
+  background-color:#fff;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+
+.container {
+    padding: 25px;
+    position: fixed;
+}
+
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
+ 
