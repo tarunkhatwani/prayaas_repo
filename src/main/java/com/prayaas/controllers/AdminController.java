@@ -1,5 +1,7 @@
 package com.prayaas.controllers;
 
+
+
 //import java.text.DateFormat;
 //import java.text.SimpleDateFormat;
 //import java.sql.Date;
@@ -9,8 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 //import java.io.IOException;
 
 import javax.servlet.http.HttpSession;
-
-import org.apache.tomcat.util.codec.binary.Base64;
+import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,9 +41,10 @@ public class AdminController {
 			activity.setActivity_Startdate(formatter.parse(request.getParameter("activity_Startdate1")));
 			activity.setActivity_Enddate(formatter.parse(request.getParameter("activity_Enddate1")));*/
 			if(!file.isEmpty()){
+				Base64 base64 = new Base64();
 				byte[] bytes = file.getBytes();
-				byte[] encodeBytes = Base64.encodeBase64(bytes);
-				String encodedStringBase64 = new String (encodeBytes, "UTF-8");
+				//byte[] encodeBytes = DatatypeConverter.parse;
+				String encodedStringBase64 = new String (base64.encode(bytes));
 				activity.setImage(encodedStringBase64);
 				hs.setAttribute("activityImage", encodedStringBase64);
 			}
